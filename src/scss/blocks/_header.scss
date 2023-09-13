@@ -52,9 +52,6 @@
             overflow: auto;
             &.active {
                 left: -10%;
-                @media(max-width: 450px) {
-                    left: -5%;
-                }
             }
         }
         .nav__list {
