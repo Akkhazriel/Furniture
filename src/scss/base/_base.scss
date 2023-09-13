@@ -20,3 +20,15 @@ body {
     line-height: 120%;
     letter-spacing: 1px;
 }
+
+.text-category {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-family: var(--btn-font);
+}
+
+.text-title {
+    color: var(--black);
+    font-family: var(--main-font);
+    font-weight: 700;
+}

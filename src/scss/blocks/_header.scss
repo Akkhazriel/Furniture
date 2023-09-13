@@ -3,7 +3,7 @@
     &__container {
         padding-top: 77px;
         @media(max-width: 1293px) {
-            padding: 0 40px;
+            padding: 77px 40px;
         }
         @media(max-width: 310px) {
             padding: 0;
@@ -25,6 +25,13 @@
             row-gap: 30px;
             padding-top: 30px;    
             width: 100%;
+        }
+    }
+    .logo {
+        fill: var(--black);
+        transition: .3s linear;
+        &:hover {
+            fill: var(--black-50);
         }
     }
     .nav {

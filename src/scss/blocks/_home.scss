@@ -1,0 +1,98 @@
+.home {
+    &__container {
+        padding-top: 107px;
+    }
+    &__wrapper {
+        background-image: url('./../img/home/left-bg-img.png');
+        background-position: 0 0;
+        // background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        column-gap: 87px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 650px;
+        row-gap: 47px;
+        padding-top: 107px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 264px;
+            background: var(--accent-color);
+            top: 0%;
+            left: -15%;
+        }
+        .home-content__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 60px;
+            .text-category {
+                font-size: 20px;
+                line-height: 0;
+            }
+            .text-title {
+                font-size: 55px;
+            }
+        }
+        .home-content__btns {
+            display: flex;
+            column-gap: 67px;
+            align-items: center;
+            .home-btn__discover {
+                background: var(--accent-color);
+                padding: 26px 50px;
+                font-size: 22px;
+                font-weight: 600;
+                font-family: var(--main-font);
+                color: var(--light);
+                transition: .3s linear;
+                &:hover {
+                    background: #000;
+                }
+            }
+            .home-btn__play {
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+                .home-btn-play__block {
+                    background: #FFF;
+                    height: 58px;
+                    width: 58px;
+                    border-radius: 50%;
+                    filter: drop-shadow(0px 4px 70px var(--black-50));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .home-btn-play__text {
+                    font-size: 22px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    &__picture {
+        background: url('./../../img/home/home-img.png');
+        width: 465px;
+        height: 698px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('./../../img/home/right-bg-img.png');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 318px;
+            height: 202px;
+            right: -20%;
+            top: 5%;
+            z-index: -1;
+        }
+    }
+}
