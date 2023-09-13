@@ -1,0 +1,33 @@
+mixin productCard(img, title, price)
+    .product__card.swiper-slide
+        img(src=`./img/product/${img}.png`, alt="Slide")
+        .product-card__text
+            h5.product-card-text__title= title
+            p.product-card-text__price= price
+
+section.product
+    .product__container
+        .product__wrapper
+            .product__caption
+                h2.product__title.text-title
+                    | Our you have to buy
+                    span Product
+            .product__list.swiper
+                .swiper-wrapper
+                    +productCard('01', 'Modern lamp study', '$258')
+                    +productCard('02', 'Modern lamp study', '$135')
+                    +productCard('03', 'Classic lamp', '$425')
+                    +productCard('04', 'Clock cute', '$331')
+                    +productCard('01', 'Clock cute', '$331')
+                    +productCard('02', 'Clock cute', '$331')
+                    +productCard('03', 'Clock cute', '$331')
+                    
+                .swiper__btns
+                    .swiper-button-prev.swiper-btn
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1L2 7.5L9 14" stroke="#282A30" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    .swiper-button-next.swiper-btn
+                        <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14L8 7.5L1 0.999999" stroke="#282A30" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
