@@ -126,10 +126,12 @@
                         &:first-child {
                             transform: rotate(-45deg);
                             top: calc(50% - 1px);
+                            animation: neonBlink 1s infinite;
                         }
                         &:last-child {
                             transform: rotate(45deg);
                             bottom: calc(50% - 1px);
+                            animation: neonBlink 1s infinite;
                         }
                     }
                     transition: .3s linear;
@@ -142,3 +144,16 @@
         }
     }
 }
+
+// KEYFRAME
+@keyframes neonBlink {
+    0% {
+      box-shadow: 2px 2px 10px #F7515C;
+    }
+    50% {
+      box-shadow: 2px 2px 10px #F7515C;
+    }
+    100% {
+      box-shadow: 2px 3px 10px purple;
+    }
+  }

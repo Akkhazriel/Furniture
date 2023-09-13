@@ -1,0 +1,19 @@
+mixin benefitsCard(value, title, text)
+    .benefits__card
+        .benefits-card__caption
+            .benefits-card-text__value= value
+            h3.benefits-card-text__title= title
+        p.benefits-card__description= text
+
+
+section.benefits
+    .benefits__container
+        .benefits__wrapper
+            .benefits__caption
+                h2.benefits__title.text-title.
+                    More value from this
+                span Furniture
+            .benefits__content
+                +benefitsCard('1', 'Full services', 'Provide the best service and very fast response.')
+                +benefitsCard('2', 'Long warranty.', 'With a 5-year warranty provided, providing satisfying service.')
+                +benefitsCard('3', 'Modern design', 'The room looks beautiful with a blend of contemporary and attractive design.')
