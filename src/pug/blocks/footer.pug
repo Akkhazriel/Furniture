@@ -1,0 +1,18 @@
+mixin footernavItem(title, link1, link2, link3)
+    .footer-nav__item
+        h3.footer-caption__title.text-title= title
+        .footer-nav__list
+            a(href="#!").footer-caption__description= link1 
+            a(href="#!").footer-caption__description= link2 
+            a(href="#!").footer-caption__description= link3 
+
+footer.footer
+    .footer__container
+        .footer__wrapper
+            .footer__caption 
+                h3.footer-caption__title.text-title Get's your discount
+                a(href="#!").footer-caption__description Check now! 
+            .footer__nav
+                +footernavItem('Our services', 'Collection', 'How its work', 'Estimats')
+                +footernavItem('Company', 'Terms of use', 'Privacy policy', 'Careers')
+                +footernavItem('Contact', 'Furniutr2@furniture.com', '(888) 315-500', 'St. VIllage, New York')
