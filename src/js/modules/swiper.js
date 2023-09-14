@@ -1,19 +1,26 @@
 import Swiper from "swiper";
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
-import 'swiper/css';
+import { Navigation, Keyboard } from 'swiper/modules';
+// import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Mousewheel, Keyboard],
+    modules: [Navigation,  Keyboard],
 
     direction: 'horizontal',
     spaceBetween: 36,
-    slidesPerView: 4,
-    slidesPerGroup: 4,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
 
-    mousewheel: {
-        invert: false,
-        releaseOnEdges: true,
+    breakpoints: {
+        599: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        },
+        999: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+        },
     },
+
     autoHeight: true,
     roundLengths: true,
 
