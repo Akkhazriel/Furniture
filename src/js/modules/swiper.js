@@ -1,6 +1,5 @@
 import Swiper from "swiper";
 import { Navigation, Keyboard } from 'swiper/modules';
-// import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
     modules: [Navigation,  Keyboard],
@@ -9,6 +8,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 36,
     slidesPerView: 1,
     slidesPerGroup: 1,
+    speed: 400,
 
     breakpoints: {
         599: {
